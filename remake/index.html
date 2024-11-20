@@ -4,8 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    
+    </style>
 </head>
 <body>
+    <!-- 导航栏 -->
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="#more-questions">Q&A</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- geek大标志 -->
+    <style>
+        .middle {
+            position: relative;
+            text-align: center;
+        }
     
+        .middle img {
+            width: 100%;
+            height: auto;
+        }
+    
+        .middle .overlay {
+            position: absolute;
+            top: 15px;
+            /* 垂直位置 */
+            left: 50%;
+            /* 从左侧50%开始 */
+            transform: translateX(-50%);
+            /* 向左移动自身宽度的一半，使其居中 */
+            width: 50%;
+            /* 根据需要调整 */
+            height: auto;
+            /* 自适应高度 */
+            object-fit: cover;
+            /* 保持比例 */
+        }
+    </style>
+
+    
+    <section class="middle" >
+        <img src="images/background_Homepage.png" alt="" style="width: 100%; height: auto;">
+        <img src="images/decoration_Geek.png" alt="" class="overlay">
+    </section>
+
 </body>
 </html>
