@@ -5,21 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    
+    .navbar a{
+        font-size: 20px;
+        color:aqua;
+        text-decoration: none;
+        transition: color 0.3s; /* 添加过渡效果 */
+    }
+    .navbar a:hover {
+            color: #fff; /* 鼠标悬停时改变颜色 */
+        }
+    .hover-image {
+            display: none; /* 默认隐藏图片 */
+            position: absolute; /* 绝对定位 */
+            top: 100%; /* 位于链接下方 */
+            left: 10%; /* 水平居中 */
+            transform: translateX(-50%) translateY(-10px); /* 初始状态向上偏移 */
+            transition: transform 0.3s, opacity 0.3s; /* 添加过渡效果 */
+            opacity: 0; /* 初始透明度 */
+            z-index: 10; /* 确保在其他内容之上 */
+        }
+        .link-hover:hover + .hover-image {
+            display: block; /* 悬停时显示图片 */
+            transform: translateX(-50%) translateY(0); /* 恢复到原位 */
+            opacity: 1; /* 最终透明度为1 */
+        }
+
+        .box {
+            position: relative; /* 设置为相对定位 */
+            width: 100%;
+            height: 20%;
+        }
+
+        /* 图片样式 */
+        .box img {
+            width: 100%; /* 图片宽度占满容器 */
+            height: 100%; /* 图片高度占满容器 */
+            object-fit: cover; /* 保持比例适应容器 */
+        }
+
+        /* 文字样式 */
+        .box .text {
+            position: absolute; /* 绝对定位 */
+            top: 50%; /* 距离顶部 50% */
+            left: 50%; /* 距离左侧 50% */
+            color: rgb(90, 14, 14,0.9); /* 文字颜色为白*/
+            font-size: 80px; /* 字体大小 */
+            font-weight: bold; /* 加粗字体 */
+            text-align: center; /* 居中对齐 */
+            transform: translate(-50%, -50%); /* 将文字居中 */
+        }
+
+        .box1{
+            position: absolute; /* 绝对定位 */
+            left: 50%;
+            top: 200px;
+            transform: translate(-50%, -50%); /* 通过位移调整中心点 */
+            background-color: white;
+            border-color: gray;
+            border-style: solid;
+            border-width:  15px ;
+            position: relative; /* 设置为相对定位 */
+            width: 50%;
+            height: 350px; 
+        }
+
+        .box2{
+            position: absolute; /* 绝对定位 */
+            left: 50%;
+            top: 200px;
+            transform: translate(-50%, -50%); /* 通过位移调整中心点 */
+            background-color: white;
+            border-color: gray;
+            border-style: solid;
+            border-width:  15px ;
+            position: relative; /* 设置为相对定位 */
+            width: 50%;
+            height: 350px; 
+        }
+
+        .box3{
+            position: absolute; /* 绝对定位 */
+            left: 50%;
+            top: 200px;
+            transform: translate(-50%, -50%); /* 通过位移调整中心点 */
+            background-color: white;
+            border-color: gray;
+            border-style: solid;
+            border-width:  15px ;
+            position: relative; /* 设置为相对定位 */
+            width: 50%;
+            height: 350px; 
+        }
+
+        .box4{
+            position: absolute; /* 绝对定位 */
+            left: 50%;
+            top: 200px;
+            transform: translate(-50%, -50%); /* 通过位移调整中心点 */
+            background-color: white;
+            border-color: gray;
+            border-style: solid;
+            border-width:  15px ;
+            position: relative; /* 设置为相对定位 */
+            width: 50%;
+            height: 350px; 
+        }
+        
     </style>
 </head>
 <body>
     <!-- 导航栏 -->
-    <header class="navbar">
+    <header class="navbar"
+        style="background-color: rgba(238, 106, 5, 0.886); position: fixed; top: 0; width: 100%; z-index: 1000; border-radius: 15px;">
         <nav>
-            <ul>
-                <li><a href="#introduction">Introduction</a></li>
+            <ul style="display: flex; list-style-type: none; padding: 0; margin: 0; justify-content: space-around;">
+                <li>
+                    <a href="#introduction" class="link-hover">Introduction</a>
+                    <img src="images/qrcode_1699620268564.jpg" alt="滑出图片" class="hover-image"  style="width: 250px;
+                    height: 250px;"/>
+                </li>
                 <li><a href="#about-us">About Us</a></li>
-                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="https://new-thread.com/" target="_blank">New Treat</a></li>
+                <li><a href="#Contact Us">Contact Us</a></li>
                 <li><a href="#more-questions">Q&A</a></li>
             </ul>
         </nav>
     </header>
+
+
 
     <!-- geek大标志 -->
     <style>
@@ -29,32 +142,81 @@
         }
     
         .middle img {
-            width: 100%;
+            width: 80%;
             height: auto;
         }
     
         .middle .overlay {
             position: absolute;
             top: 15px;
-            /* 垂直位置 */
             left: 50%;
             /* 从左侧50%开始 */
             transform: translateX(-50%);
             /* 向左移动自身宽度的一半，使其居中 */
             width: 50%;
-            /* 根据需要调整 */
             height: auto;
-            /* 自适应高度 */
             object-fit: cover;
             /* 保持比例 */
         }
     </style>
-
-    
     <section class="middle" >
         <img src="images/background_Homepage.png" alt="" style="width: 100%; height: auto;">
         <img src="images/decoration_Geek.png" alt="" class="overlay">
     </section>
+
+
+    <div class="box" id="introduction">
+        <img src="images/decoration_Transition.png" alt="">
+        <div class="text">INTRODUCTION</div>
+    </div>
+
+
+    <div class="box1" style="display: flex; align-items: center; justify-content: space-between;">
+        <div style="flex: 1; text-align: left; padding: 10px;">
+            <h2>开发程序猿</h2>
+            <h1 style="color: turquoise;">“Stay Hungry，Stay Foolish”</h1>
+            <p style="color: antiquewhite;">
+            前端：前端开发是创建Web或app视觉界面呈现给用户的过程通过HTML，CSS及JavaScript以及衍生出来的各种技术、框架、解决方案，实现互联网产品的用户界面交互。</p>
+            <p>后端：通常也称服务器端开发。不对用户显示,负责处理前端的请求，进行逻辑处理和数据交互。 客户端: 移动应用开发是为了小型、无线计算设备编写软件的流程和程序的集合，例如智能手机或平板电脑。</p>
+        </div>
+        <img src="images/Geek_Programmer.png" alt="" style="height: 80%; width: auto; margin-right: 20px;">
+    </div>
+    
+    <div class="box2" style="display: flex; align-items: center; justify-content: space-between;">
+        <div style="flex: 1; text-align: left; padding: 10px;">
+            <h2>游戏开发</h2>
+            <h1 style="color: turquoise;">"TECH OTAKUS SAVE THE WORLD"</h1>
+            <p style="color: antiquewhite;">
+                对游戏开发的热爱和追求，使我们相聚于此。 涉及计算机图形学的学习，我们使用物理模拟引擎Unity开发我们所追求的世界，一个故事，一个角色，在我们的世界里改变现实，创造新的可能，我们参与，我们改变，我们创造...</p>
+        </div>
+        <img src="images/Geek_Game.png" alt="" style="height: 80%; width: auto; margin-right: 20px;">
+    </div>
+
+    <div class="box3" style="display: flex; align-items: center; justify-content: space-between;">
+        <img src="images/Geek_PM.png" alt="" style="height: 80%; width: auto; margin-right: 10px;">
+        <div style="flex: 1; text-align: left; padding: 10px;">
+            <h2>产品经理</h2>
+            <h1 style="color: turquoise;">"好的软件的特征是,明明没用过，但总觉得用过似的。"</h1>
+            <p style="color: antiquewhite;">
+                PM是针对某一项或是某一类的产品进行规划和管理的人员。 PM需要拥有缜密的产品逻辑思维，研究用户心理，负责产品的整个生命周期。
+                PM参与产品的UI和交互设计，为设计和开发确定产品原型，能够将产品变得有个性,操作变得舒适简单、自由。
+                PM需要一定的文档能力和沟通能力，能够在团队合作的过程中跟各个角色进行有效沟通。
+            </p>
+        </div>
+    </div>
+
+
+    <div class="box4" style="display: flex; align-items: center; justify-content: space-between;">
+        <img src="images/Geek_Programmer.png" alt="" style="height: 80%; width: auto; margin-right: 10px;">
+        <div style="flex: 1; text-align: left; padding: 10px;">
+            <h2>安全</h2>
+            <h1 style="color: turquoise;">"路漫漫其修远兮,非大毅力者不能"</h1>
+            <p style="color: antiquewhite;">
+                我们主要学习Web安全和二进制安全。在Web安全中我们将学习和实践Web漏洞挖掘技术，也将探索和讨论Web安全实践的方法。在二进制安全中我们专注于分析和防御与计算机程序、系统相关的威胁，同时实践漏洞分析和修补。耐心和钻研缺一不可。
+            </p>
+        </div>
+    </div>
+
 
 </body>
 </html>
