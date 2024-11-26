@@ -127,7 +127,7 @@
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="https://new-thread.com/" target="_blank">New Treat</a></li>
                 <li><a href="#Contact Us">Contact Us</a></li>
-                <li><a href="#more-questions">Q&A</a></li>
+                <li><a href="#Q&A">Q&A</a></li>
             </ul>
         </nav>
     </header>
@@ -424,6 +424,181 @@
         </script>
 
 </div>
+<br>
+<br>
+<br>
+<br><br><br><br><br><br><br>
+
+<div class="Q&A" id="Q&A"
+    style="position: relative; border: 5px solid blueviolet; width: 100%; height: 1200px; background-color: burlywood;">
+    <img src="images\background_QA.png" alt="" style="width: 100%; height: 100%;">
+    <h2
+        style="position: absolute; left: 50%; top: 0; transform: translateX(-50%); color: rgb(238, 148, 3); font-size: 90px;">
+        Q&A</h2>
+
+    <!-- 问题按钮 -->
+    <button onclick="toggleAnswer1()"
+        style="color: bisque; border: 2px solid black; position: absolute; left: 50%; top: 17%; transform: translateX(-50%); width: 80%; height: 50px; background-color: cadetblue; cursor: pointer;">
+        1.什么是Geek(极客)？Geek精神又是什么？
+    </button>
+
+    <!-- 回答内容 -->
+    <div id="answer1"
+        style="display: none; position: absolute; left: 50%; top: 22%; transform: translateX(-50%); width: 80%; background-color: rgb(3, 215, 159,0.8); padding: 10px; border: 1px solid gray; font-size: 16px; color: black; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+        拥有好奇之心，改变之力，爱钻研，能折腾。
+    </div>
+
+    <button onclick="toggleAnswer2()"
+        style="color: bisque; border: 2px solid black; position: absolute; left: 50%; top: 25%; transform: translateX(-50%); width: 80%; height: 50px; background-color: cadetblue; cursor: pointer;">
+        2.招新是安排在什么时间？
+    </button>
+    
+    <!-- 回答内容 -->
+    <div id="answer2"
+        style="display: none; position: absolute; left: 50%; top: 30%; transform: translateX(-50%); width: 80%; background-color: rgb(3, 215, 159,0.8); padding: 10px; border: 1px solid gray; font-size: 16px; color: black; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+        按照惯例，正式招新时间是在9月下旬~10月上旬，不过今年会有一些改动，笔试地 点一般在9号教学楼。 如果想要了解我们，可以加入我们的QQ群，招新具体的安排/变动会在招新群通知。
+    </div>
+
+    <button onclick="toggleAnswer3()"
+        style="color: bisque; border: 2px solid black; position: absolute; left: 50%; top: 35%; transform: translateX(-50%); width: 80%; height: 50px; background-color: cadetblue; cursor: pointer;">
+        3.我们有考核吗？考核流程是怎样的呀？
+    </button>
+    
+    <!-- 回答内容 -->
+    <div id="answer3"
+        style="display: none; position: absolute; left: 50%; top: 40%; transform: translateX(-50%); width: 80%; background-color: rgb(3, 215, 159,0.8); padding: 10px; border: 1px solid gray; font-size: 16px; color: black; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+        嗯...我们一共有一轮笔试和两轮面试。权衡技术、经验和学习能力，第一轮是一些视野性的题目，淘汰率并不高。第二轮单独面试， 根据你的笔试提出技术相关的问题、兴趣爱好、个人看法。最后一轮群面，首先问及时间分
+        配上的问题，其次也会向你提出各种奇怪的问题。这一轮中许多题目其实并不难，也无标准答案，重在考察同学们在压力下的逻辑思维。全部通过成为预备成员啦。
+    </div>
+
+
+    <button onclick="toggleAnswer4()"
+        style="color: bisque; border: 2px solid black; position: absolute; left: 50%; top: 47%; transform: translateX(-50%); width: 80%; height: 50px; background-color: cadetblue; cursor: pointer;">
+        4.考核是怎样的形式？
+    </button>
+    
+    <!-- 回答内容 -->
+    <div id="answer4"
+        style="display: none; position: absolute; left: 50%; top: 52%; transform: translateX(-50%); width: 80%; background-color: rgb(3, 215, 159,0.8); padding: 10px; border: 1px solid gray; font-size: 16px; color: black; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+        在考核期间每人会拥有一位'长者'带你入门，学习技术与知识，交流经验与想法。完成每周的新人任务后再进行一次考核筛选 后就可以成为Geek组正式成员啦！在考核期必须满足每周30个小时在实验室哦,所以考核期也不可以懈怠哦！
+    </div>
+
+
+    <button onclick="toggleAnswer5()"
+        style="color: bisque; border: 2px solid black; position: absolute; left: 50%; top: 58%; transform: translateX(-50%); width: 80%; height: 50px; background-color: cadetblue; cursor: pointer;">
+        5.进入Geek组之后都有什么福利呢？
+    </button>
+    
+    <!-- 回答内容 -->
+    <div id="answer5"
+        style="display: none; position: absolute; left: 50%; top: 63%; transform: translateX(-50%); width: 80%; background-color: rgb(3, 215, 159,0.8); padding: 10px; border: 1px solid gray; font-size: 16px; color: black; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+        一对一的新人指引，每一个成员都有会一个mentor, 带你初入门槛，与你一同成长，组内管理较宽松,在尊重其他人的前提下可以尽情发挥自己的个性。
+        打破平淡，与同样疯狂的人把疯狂的idea实现，磨砺耐性、培养思维、成就梦想。Lab设备/网络资源充足，闲暇之余也有组织活动。更有许多的故事等你来听~
+    </div>
+
+    <button onclick="toggleAnswer6()"
+        style="color: bisque; border: 2px solid black; position: absolute; left: 50%; top: 70%; transform: translateX(-50%); width: 80%; height: 50px; background-color: cadetblue; cursor: pointer;">
+        6.进入团队会影响我的日常学习吗？
+    </button>
+    
+    <!-- 回答内容 -->
+    <div id="answer6"
+        style="display: none; position: absolute; left: 50%; top: 75%; transform: translateX(-50%); width: 80%; background-color: rgb(3, 215, 159,0.8); padding: 10px; border: 1px solid gray; font-size: 16px; color: black; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+        你要知道大学是一个可以自由安排自己学习生活的地方。如果你想在上课之余充实自己、激励自己，最好的方法就是和比自己更优秀的人在一起。团队不缺优秀的 人，而我们也期待同样优秀的你，让我们一起前进！小组里也有不少保研, 考研的前辈们,
+        大部分都能找到一个平衡点, 而且团队的经历对你日后读研, 工作都大有裨益。
+    </div>
+
+    <button onclick="toggleAnswer7()"
+        style="color: bisque; border: 2px solid black; position: absolute; left: 50%; top: 82%; transform: translateX(-50%); width: 80%; height: 50px; background-color: cadetblue; cursor: pointer;">
+        7.老师以及学长学姐们的期望是什么?
+    </button>
+    
+    <!-- 回答内容 -->
+    <div id="answer7"
+        style="display: none; position: absolute; left: 50%; top: 87%; transform: translateX(-50%); width: 80%; background-color: rgb(3, 215, 159,0.8); padding: 10px; border: 1px solid gray; font-size: 16px; color: black; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+        我们希望你有很强的自学能力，同时关注新事物、新技术，喜欢挑战，逻辑性强，善于和各种文化的人合作.“每个人都可以做自己想做的事情，每个人的方向不一样。 如果你想做产品或有不错的 idea，那么就可以找志同道合的人一起合作。
+    </div>
+</div>
+
+<script>
+    function toggleAnswer1() {
+        const answerDiv1 = document.getElementById("answer1");
+        // 切换显示状态
+        if (answerDiv1.style.display === "none" || answerDiv1.style.display === "") {
+            answerDiv1.style.display = "block"; // 显示回答内容
+        } else {
+            answerDiv1.style.display = "none"; // 隐藏回答内容
+        }
+    }
+</script>
+
+<script>
+    function toggleAnswer2() {
+        const answerDiv2 = document.getElementById("answer2");
+        // 切换显示状态
+        if (answerDiv2.style.display === "none" || answerDiv2.style.display === "") {
+            answerDiv2.style.display = "block"; // 显示回答内容
+        } else {
+            answerDiv2.style.display = "none"; // 隐藏回答内容
+        }
+    }
+</script>
+<script>
+    function toggleAnswer3() {
+        const answerDiv3 = document.getElementById("answer3");
+        // 切换显示状态
+        if (answerDiv3.style.display === "none" || answerDiv3.style.display === "") {
+            answerDiv3.style.display = "block"; // 显示回答内容
+        } else {
+            answerDiv3.style.display = "none"; // 隐藏回答内容
+        }
+    }
+</script>
+
+<script>
+    function toggleAnswer4() {
+        const answerDiv4 = document.getElementById("answer4");
+        // 切换显示状态
+        if (answerDiv4.style.display === "none" || answerDiv4.style.display === "") {
+            answerDiv4.style.display = "block"; // 显示回答内容
+        } else {
+            answerDiv4.style.display = "none"; // 隐藏回答内容
+        }
+    }
+</script>
+<script>
+    function toggleAnswer5() {
+        const answerDiv5 = document.getElementById("answer5");
+        // 切换显示状态
+        if (answerDiv5.style.display === "none" || answerDiv5.style.display === "") {
+            answerDiv5.style.display = "block"; // 显示回答内容
+        } else {
+            answerDiv5.style.display = "none"; // 隐藏回答内容
+        }
+    }
+</script>
+<script>
+    function toggleAnswer6() {
+        const answerDiv6 = document.getElementById("answer6");
+        // 切换显示状态
+        if (answerDiv6.style.display === "none" || answerDiv6.style.display === "") {
+            answerDiv6.style.display = "block"; // 显示回答内容
+        } else {
+            answerDiv6.style.display = "none"; // 隐藏回答内容
+        }
+    }
+</script>
+<script>
+    function toggleAnswer7() {
+        const answerDiv7 = document.getElementById("answer7");
+        // 切换显示状态
+        if (answerDiv7.style.display === "none" || answerDiv7.style.display === "") {
+            answerDiv7.style.display = "block"; // 显示回答内容
+        } else {
+            answerDiv7.style.display = "none"; // 隐藏回答内容
+        }
+    }
+</script>
 
 
 
